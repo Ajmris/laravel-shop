@@ -13,4 +13,8 @@ class Controller extends BaseController
         $title='Welcome on my website!';
         return view('welcome')->with('title', $title);
     }
+    public function dashboard(){
+        $title='Welcome on Dashboard site!';
+        return view('dashboard')->with('title', $title);
+    }
 }
