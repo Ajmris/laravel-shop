@@ -53,9 +53,9 @@
                             </table>
                         </div>
                     </p>
-            <!--<div class="float-left">
-                <a href="{{ url('/add-blog') }}" class="btn btn-primary">Add Blog</a>
-            </div>-->
+                    <div style="background-color: aquamarine; width:80px; margin: 5px; padding: 5px;" class="float-left">
+                        <a href="{{ url('/add-blog') }}">Add Blog</a>
+                    </div>
                 </div>
             </div>
         </div>
