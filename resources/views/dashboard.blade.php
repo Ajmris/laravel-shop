@@ -6,13 +6,6 @@
     </x-slot>
 
     <div class="max-w-7xl mx-auto p-6 lg:p-8">
-        <nav class="flex justify-center mt-6 text-xl font-semibold text-gray-900 scale-100 p-6 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-            <ul style="display: flex;">
-                <li style="margin-right: 10px;"><a href="{{ url('/product') }}">Products</a></li>
-                <li style="margin-right: 0px;"><a href="{{ url('/blog') }}">Blog</a></li>
-            </ul>
-        </nav>
-        
         <div class="flex justify-center">
             <div style="margin-top: 20px;">
                 <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-30 w-auto bg-gray-100">
