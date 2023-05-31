@@ -20,7 +20,7 @@ Route::middleware(['auth:sanctum',
          "dashboard"])->name('dashboard');
 
     Route::get('/product', [App\Http\Controllers\ProductController::class, "show"])->name('product');
-    Route::get('/edit/{id}', [App\Http\Controllers\ProductController::class, "edit"]);
+    Route::get('/productedit/{id}', [App\Http\Controllers\ProductController::class, "edit"]);
 
     Route::get('/blogs', [App\Http\Controllers\BlogController::class, "index"])->name('blogs');
     Route::get('/blog', [App\Http\Controllers\BlogController::class, "index"])->name('blog');

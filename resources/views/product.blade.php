@@ -15,8 +15,8 @@
             </div>
         </div>
 
-        <div class="mt-16">
-            <div class="scale-100 p-6 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
+        <div class="mt-16 flex justify-center">
+            <div class="scale-100 p-6 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
                 <div>
                     <div class="h-16 w-16 bg-red-50 flex items-center justify-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
@@ -25,30 +25,32 @@
                     </div>
                     <h2 class="mt-6 text-xl font-semibold text-gray-900">There you can buy our products!</h2>
                     <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Category</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>description</th>
-                                    <th>Edit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($products as $product)
+                        <div class="flex justify-center">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Category</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>description</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($products as $product)
                                     <tr>
                                         <td>{{$product->id}}</td>
                                         <td>{{$product->categories->name}}</td>
                                         <td>{{$product->name}}</td>
                                         <td>{{$product->price}}</td>
                                         <td>{{$product->description}}</td>
-                                        <td><a href="{{ url('edit/'.$product->id) }}" class="btn btn-primary">Edit</td>
+                                        <td><a href="{{ url('productedit/'.$product->id) }}" class="btn btn-primary">Edit</td>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </p>
                 </div>
             </div>

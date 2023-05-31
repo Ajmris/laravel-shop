@@ -17,6 +17,6 @@ class ProductController extends Controller
     public function edit($id){
         $title='Edit product';
         $products=Product::find($id);
-        return view('edit', compact('products'))->with('title', $title);
+        return view('productedit', compact('products'))->with('title', $title);
     }
 }
