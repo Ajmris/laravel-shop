@@ -9,6 +9,8 @@ use App\Models\Blog;
 class BlogSeeder extends Seeder
 {
     public function run(){
+        // Usuwanie istniejących rekordów z tabeli blogs
+        Blog::truncate();
         /*$blog=collect(Blog::all()->modelKeys());
         for($i=0; $i<100; $i++){
             ['name','description',];
@@ -56,6 +58,12 @@ class BlogSeeder extends Seeder
             'description' => "Ciekawe czy mi to wyjdzie, tak jak planowałem",
             'status' => 1,
             'created_at' => "2023-08-15 15:14:36",
+        ],
+        [
+            'name' => "błędy",
+            'description' => "Myślałem że mi się udało, a się myliłem",
+            'status' => null,
+            'created_at' => "2023-08-05 18:14:03",
         ]
         ];
 
